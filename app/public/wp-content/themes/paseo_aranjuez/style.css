@@ -1,0 +1,176 @@
+/*
+    Theme Name: Paseo Aranjuez
+    Theme URI: https://www.facebook.com/elmismo.viajeoficial
+    Author: Rene Perez Rodriguez
+    Author URI: https://reneelprogramador.dev/
+    Description: Tema desarrollado por El Mismo Viaje para un edificio eco-amigable e inteligente, donde se tiene acceso a tres cosas importantes: negocios, entretenimiento y compras, con el fin de generar nuevas oportunidades a través de un Zócalo Comercial donde se integran unidades locativas de las marcas más reconocidas, plaza de comidas y un piso exclusivo que incorpora lo mejor de la comida gourmet en Bolivia.
+    Version: 1.0.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licences/gpl-2.0.html
+    Tags: comercio, edificio comercial, e-comerce, WooCommerce, tienda, cochabamba, bolivia, el mismo viaje, reneelprogramador.dev,
+    Text Domain: Paseo Aranjuez
+
+*/
+:root {
+    /** Fuentes **/
+    --fuentePrincipal: 'Staatliches', sans-serif;
+    --fuenteTexto: 'Open Sans', sans-serif;
+    --fuenteSecundaria: 'Raleway', sans-serif;
+
+    /** Colores **/
+    --colorPrimario: #030136;
+    --colorSecundario: #ffffff;
+    --colorTerciario: #60607b;
+
+    --blanco: #fff;
+    --negro: #0000;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* Now 10px = 1rem! */
+
+}
+body {
+    font-size: 16px; /* px fallback */
+    font-size: 1.6rem; /* default font-size for document */
+    line-height: 1.5; /* a nice line-height */
+    font-family: var(--fuenteSecundaria);
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Headings **/
+h1, h2, h3, h4 {
+    font-family: var(--fuentePrincipal);;
+    margin: 1rem 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-size: 2.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+
+}
+
+/** Globales**/
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width:  150px;
+    height: auto;
+}
+.contenedor {
+   max-width: 1200px;
+   width: 95%;
+   margin: 0 auto; 
+}
+
+/** Header **/
+.site-header {
+    background-color: var(--colorPrimario);
+    padding: 2rem 0;
+}
+@media (min-width: 940px) {
+    .barra-navegacion {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+/** Menu Principal **/
+.menu-principal {
+    display: none;
+}
+
+@media (min-width: 940px ) {
+    .menu-principal {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .menu-principal .menu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    .menu-principal li {
+        margin-right: 2rem;
+        text-align: center;
+    }
+    .menu-principal li:nth-last-of-type{
+        margin-right: 0;
+    }
+}
+
+.menu-principal a {
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    color:var(--blanco);
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    display: block;
+}
+@media (min-width: 940px) {
+    .menu-principal a {
+        font-size: 1.5rem;
+        position: relative;
+        z-index: 1;
+    }
+    .menu-principal a::before,
+    .menu-principal a::after{
+        position: absolute;
+        left: 0;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50%;
+        background-color: var(--blanco);
+        z-index: -1;
+        transform: scaleX(0);
+        transition: transform .6s;
+    }
+    .menu-principal a::before{
+        top: 0;
+        transform-origin: left;
+        }
+    .menu-principal a::after{
+        top: 50%;
+        transform-origin: right;
+    }
+    .menu-principal a:hover::before {
+        transform: scaleX(1);
+    }
+    .menu-principal a:hover::after {
+        transform: scaleX(1);
+    }
+    a:hover {
+        color: var(--colorPrimario);
+    }
+}
+.menu-principal .current_page_item {
+    border-bottom: 3px solid var(--colorSecundario);
+}
