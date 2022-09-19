@@ -1,2 +1,1 @@
-2022/08/22 18:58:44 [alert] 14504#27052: OpenEvent("ngx_master_20556") failed (2: The system cannot find the file specified)
-2022/09/17 17:24:40 [alert] 22028#11968: OpenEvent("ngx_master_21268") failed (2: The system cannot find the file specified)
+2022/09/19 15:30:05 [error] 29748#9272: *363 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10008", host: "paseo-aranjuez.local", referrer: "http://paseo-aranjuez.local/wp-admin/"
