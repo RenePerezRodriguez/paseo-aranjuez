@@ -138,7 +138,7 @@ img {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        margin-left: 100PX;
+        
     }
 
     /*li home*/
@@ -264,7 +264,8 @@ img {
     .boton-header {
         cursor: pointer;
         background: transparent;
-        position: relative;
+        position: absolute;
+        right: 0;
         display: inline-block;
         outline: none;
         border: 2px solid var(--blanco);
@@ -278,6 +279,8 @@ img {
         -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
         transition: 0.45s;
         transition-delay: 0s;
+
+        right: 0;
       }
       
       .boton-header:hover {
