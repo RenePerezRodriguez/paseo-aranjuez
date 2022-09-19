@@ -1,6 +1,7 @@
-$ = jQuery.noConflict();
+jQuery(document).ready( $ => {
+  $('.menu-principal .menu').slicknav();
+});
 
-// Use jQuery via $j(...)
-$j(document).ready(function(){
-  alert('test');
+jQuery(".sticky_share_btn").click(function () {
+  jQuery(".listing").fadeToggle(600);
 });
