@@ -28,7 +28,7 @@ function paseoaranjuez_scripts_styles() {
     wp_enqueue_script('slicknavJS', get_template_directory_uri() . '/js/jquery.slicknav.min.js', array('jquery'), '1.0.10', true);
     
     //Scripts
-    wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery', 'slicknavJS'), '1.0.0', true);
+    wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery', 'slicknavJS'), '1.0.10', true);
 
 }
 add_action('wp_enqueue_scripts', 'paseoaranjuez_scripts_styles');

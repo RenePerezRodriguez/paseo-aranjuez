@@ -355,6 +355,17 @@ img {
     border-bottom: 3px solid var(--colorSecundario);
 }
 
+/* Reescribir Estilos Menu Movil*/
+.slicknav_menu{
+    background-color: var(--transparent);
+}
+
+@media  (min-width: 768px){
+    .slicknav_menu{
+        display: none;
+    }
+}
+
 /*Redes sociales*/
 .sticky_share_btn {
     position: fixed;
