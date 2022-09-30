@@ -33,6 +33,12 @@ html {
     /* Now 10px = 1rem! */
 
 }
+.container {
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
 body {
     font-size: 16px;
@@ -411,4 +417,150 @@ ul.listing {
 .fixed_share .whatsapp, 
 .fixed_share .whatsapp > a{
   color: #25D366;
+}
+/* section footer */ 
+.site-footer {
+    background-image: url('./img/Texturapaseo.svg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.section-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--blanco);
+}   
+.section-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-text {
+    text-transform: uppercase;
+    font-family: var(--fuenteTexto);
+    font-size: 3rem;
+}
+.section-info label {
+    text-transform: uppercase;
+}
+.section-picture {
+    width: 200px;
+    height: auto;
+}
+
+.section-picture .slogo {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
+.icons {
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+.footer__social {
+    width: 24px;
+}
+.section-media-text {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    
+}
+.form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form input {
+    border: unset;
+    background-color: #e4eff8;
+    padding: 1rem;
+    border-radius: 2rem;
+    flex-basis: 1;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.form button {
+    background-color: #0575E6;
+    color: #fff;
+    border: unset;
+    border-radius: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    width: 90%;    
+}
+.form, button , input {
+    padding: 1em;
+}
+.section-flex {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+}
+@media (min-width: 768px){
+    /* section footer */ 
+.section-footer {    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-media {
+    order: 0;
+}   
+.section-logo {
+    order: 1;
+}
+.section-info {
+    order: 2;
+}
+.section-copy {
+    display: none;
+}
+.section-picture {
+    width: 200px;
+    max-width: 350px;
+    height: auto;
+}
+
+.section-media-text {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    
+}
+.form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form input {
+    border: unset;
+    background-color: #e4eff8;
+    padding: 1rem;
+    border-radius: 2rem;
+    flex-basis: 1;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.form button {
+    background-color: #0575E6;
+    color: #fff;
+    border: unset;
+    border-radius: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    width: 90%;    
+}
+.form, button , input {
+    padding: 1em;
+}
+.section-flex {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+}
 }

@@ -1,1 +1,0 @@
-2022/09/19 15:30:05 [error] 29748#9272: *363 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10008", host: "paseo-aranjuez.local", referrer: "http://paseo-aranjuez.local/wp-admin/"

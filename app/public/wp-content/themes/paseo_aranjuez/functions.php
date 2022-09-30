@@ -8,6 +8,13 @@ function paseoaranjuez_menus() {
 }
 add_action('init', 'paseoaranjuez_menus');
 
+function paseoaranjuez_footer_menus() {
+    register_nav_menus(array(
+        'menu-footer' => __('Menu Footer', 'Paseo Aranjuez')
+    ) );
+}
+add_action('init', 'paseoaranjuez_footer_menus');
+
 //Scripts y Styles
 function paseoaranjuez_scripts_styles() {
     //Iconos
