@@ -34,6 +34,14 @@ html {
 
 }
 
+/** Sergio **/
+.container {
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 body {
     font-size: 16px;
     /* px fallback */
@@ -367,6 +375,7 @@ img {
 }
 
 /*Redes sociales*/
+/*
 .sticky_share_btn {
     position: fixed;
     left: 30px;
@@ -423,3 +432,154 @@ ul.listing {
 .fixed_share .whatsapp > a{
   color: #25D366;
 }
+*/
+
+/* section footer */ 
+.site-footer {
+    background-image: url('./img/Texturapase.svg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.section-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--blanco);
+}   
+.section-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-text {
+    text-transform: uppercase;
+    font-family: var(--fuenteTexto);
+    font-size: 3rem;
+}
+.section-info label {
+    text-transform: uppercase;
+}
+.section-picture {
+    width: 200px;
+    height: auto;
+}
+
+.section-picture .slogo {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
+.icons {
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+.footer__social {
+    width: 30px;
+    height: 30px;
+}
+.footer__icon {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+.section-media-text {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    
+}
+.form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form input {
+    border: unset;
+    background-color: var(--transparente);
+    padding: 1rem;
+    border-bottom: 2px solid white;
+    flex-basis: 1;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.form button {
+    background-color: #203c63;
+    color: #fff;
+    border: unset;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    width: 90%;    
+}
+.form, button , input {
+    padding: 1em;
+}
+.section-flex {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    justify-content: center;
+}
+@media (min-width: 768px){
+    /* section footer */ 
+.section-footer {    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-media {
+    order: 0;
+}   
+.section-logo {
+    order: 1;
+}
+.section-info {
+    order: 2;
+}
+.section-copy {
+    display: none;
+}
+.section-picture {
+    width: 250px;
+    max-width: 350px;
+    height: auto;
+}
+
+.form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form input {    
+    flex-basis: 1;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.form button {
+    cursor: pointer;
+    width: 90%;    
+}
+.form, button , input {
+    padding: 1em;
+}
+.final {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222329;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0 2rem;
+    color: white;
+}
+.final div {
+    display: flex;
+    gap: 1.5rem;
+    
+}}
